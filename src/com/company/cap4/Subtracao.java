@@ -16,4 +16,17 @@ public class Subtracao implements Expressao {
 
         return valorDaEsquerda - valorDaDireita;
     }
+
+    @Override
+    public void aceita(Impressora impressora) {
+        impressora.visitaSubtracao(this);
+    }
+
+    public Expressao getEsquerda(){
+        return esquerda;
+    }
+
+    public Expressao getDireita(){
+        return direita;
+    }
 }

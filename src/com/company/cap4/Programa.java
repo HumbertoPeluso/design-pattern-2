@@ -13,5 +13,8 @@ public class Programa {
 
      System.out.println(resultado);
 
+    Impressora impressora = new Impressora();
+    soma.aceita(impressora);
+
     }
 }
